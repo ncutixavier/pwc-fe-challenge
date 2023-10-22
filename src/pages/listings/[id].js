@@ -6,7 +6,6 @@ import Loading from '@/components/Loading'
 import { getListingImages } from '@/utils/utils'
 import ListingImages from '@/components/listing-details/ListingImages'
 import ShareListing from '@/components/listing-details/ShareListing'
-import Link from 'next/link'
 
 const ListingDetails = () => {
   const route = useRouter()
@@ -41,11 +40,11 @@ const ListingDetails = () => {
 
   return (
     <div className='w-[80%] mx-auto sm:w-[90%] xs:w-[95%]'>
-      <Link href={'/'} className='mt-5 flex items-center gap-2 rounded-md sm:hidden'>
+      <button onClick={() => route.push('/')} className='mt-5 flex items-center gap-2 rounded-md sm:hidden'>
         <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
         </svg><span>Home</span>
-      </Link>
+      </button>
 
       <div className='md:hidden'><ListingDetailsHeader listing={data} isMobile={true} onShare={openShareModal} /></div>
       <div className="sm:flex sm:flex-col-reverse sm:mt-5">
