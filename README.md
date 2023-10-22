@@ -14,7 +14,6 @@ This project is a web application developed using Next.js, a popular React frame
 - Modern and responsive design.
 - Next.js for efficient server-side rendering and routing.
 - Easy deployment with Vercel.
-- Add more features here as your project evolves.
 
 ## Getting Started
 
