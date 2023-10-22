@@ -42,8 +42,8 @@ const ListingDetails = () => {
   return (
     <div className='w-[80%] mx-auto sm:w-[90%] xs:w-[95%]'>
       <Link href={'/'} className='mt-5 flex items-center gap-2 rounded-md sm:hidden'>
-        <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
+        <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
         </svg><span>Home</span>
       </Link>
 
@@ -60,7 +60,7 @@ const ListingDetails = () => {
           <div className="h-full sm:min-w-full">
             <img src={images[0]} onClick={openModal} alt="" className='hover:opacity-90 sm:rounded-none rounded-l-xl h-full object-cover cursor-pointer' />
           </div>
-          <div className="grid grid-cols-2 gap-3 h-full sm:flex">
+          <div className="grid grid-cols-2 md:gap-3 h-full sm:flex">
             {[1, 2, 3, 4].map(index => (
               <img key={index} src={images[index]} alt="" className={`${classes.normalImage} ${index === 2 ? classes.second : ''} ${index === 4 ? classes.last : ''}`} onClick={openModal} />
             ))}
@@ -68,7 +68,7 @@ const ListingDetails = () => {
         </div>
       </div>
 
-      <div class="my-5 text-justify leading-7 text-gray-600">{data?.summary}</div>
+      <div className="my-5 text-justify leading-7 text-gray-600">{data?.summary}</div>
       <ListingImages isOpen={isModalOpen} onClose={closeModal} images={images} />
       <ShareListing listing={data} image={images[0]} isOpen={isShareModalOpen} onClose={() => setShareModalOpen(false)} />
     </div>

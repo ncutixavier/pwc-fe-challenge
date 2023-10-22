@@ -6,16 +6,16 @@ import Link from 'next/link'
 const ShareListing = ({ listing, image, isOpen, onClose }) => {
     const socials = [
         {
-            title: "whatsapp",
-            link: ""
+            title: "Whatsapp",
+            link: `https://api.whatsapp.com/send?text=${window.location.origin}/listing/${listing.id}`
         },
         {
-            title: "twitter",
-            link: ""
+            title: "Twitter",
+            link: `https://twitter.com/intent/tweet?url=${window.location.origin}/listing/${listing.id}`
         },
         {
-            title: "facebook",
-            link: ""
+            title: "Facebook",
+            link: `https://www.facebook.com/sharer/sharer.php?u=${window.location.origin}/listing/${listing.id}`
         }
     ]
     return (
@@ -29,7 +29,7 @@ const ShareListing = ({ listing, image, isOpen, onClose }) => {
 
                 <div className="grid md:grid-cols-2 gap-5 md:pr-8 pb-8">
                     {socials.map((item, i) => (
-                        <Link href={``} key={i} className='flex gap-5 border border-gray-500 px-8 py-3 rounded-xl'>
+                        <Link href={item.link} target='_blank' key={i} className='flex gap-5 border border-gray-500 px-8 py-3 rounded-xl'>
                             <Image
                                 src={`/assets/icons/${item.title.toLowerCase()}.svg`}
                                 alt="Picture of the author"
