@@ -36,11 +36,7 @@ const ListingDetails = () => {
   const images = data ? getListingImages(data?.images, id ?? 1) : []
 
   if (!id || isFetching) {
-    return (
-      <div className='h-screen flex items-center justify-center'>
-        <Loading />
-      </div>
-    )
+    return <Loading height={100} />
   }
 
   return (

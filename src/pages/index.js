@@ -9,7 +9,7 @@ import Loading from "@/components/Loading";
 const HomePage = () => {
 
   const { ref, inView } = useInView();
-  const { data, isSuccess, hasNextPage, fetchNextPage, isFetchingNextPage } = useGetAllListings();
+  const { data, isLoading, isSuccess, hasNextPage, fetchNextPage, isFetchingNextPage } = useGetAllListings();
 
   useEffect(() => {
     if (inView && hasNextPage) {
@@ -30,7 +30,8 @@ const HomePage = () => {
           )}
       </div>
 
-      {isFetchingNextPage && <div className="flex items-center justify-center h-[30vh]"><Loading /></div>}
+      {isLoading && <Loading height={50} />}
+      {isFetchingNextPage && <Loading height={30} />}
     </MainLayout>
   )
 }
