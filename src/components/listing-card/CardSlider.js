@@ -25,7 +25,7 @@ const CardSlider = ({ images }) => {
                 className="mySwiper"
             >
                 {images.map((item, index) => (
-                    <SwiperSlide className='h-[450px]'>
+                    <SwiperSlide className='h-[450px]' key={index}>
                         <img src={item} className='h-full' />
                     </SwiperSlide>
                 ))}
