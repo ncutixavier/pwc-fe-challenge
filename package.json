@@ -1,0 +1,25 @@
+{
+  "name": "pwc-fe-challenge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-query": "^3.39.3",
+    "swiper": "^10.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "sass": "^1.69.4",
+    "tailwindcss": "^3"
+  }
+}
