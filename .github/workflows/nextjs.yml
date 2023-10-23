@@ -1,4 +1,4 @@
-name: Check NextJs build
+name: Github Actions CI
 
 on:
   push:
