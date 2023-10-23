@@ -1,3 +1,5 @@
+[![Github Action CI](https://github.com/ncutixavier/pwc-fe-challenge/actions/workflows/nextjs.yml/badge.svg)](https://github.com/ncutixavier/pwc-fe-challenge/actions/workflows/nextjs.yml)
+
 # PWC Frontend Challenge
 
 Welcome to the PWC Frontend Challenge! 🚀
