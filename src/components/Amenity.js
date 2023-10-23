@@ -7,7 +7,7 @@ const Amenity = (props) => {
 
     return (
         <button onClick={() => router.push(props.to)}>
-            <div className={`min-w-[100px] flex flex-col justify-center items-center ${props.active ? 'opacity-100 border-gray-900' : 'opacity-60'} hover:opacity-100 cursor-pointer border-b-2 border-transparent hover:border-gray-900 py-3`}>
+            <div className={`min-w-[100px] flex flex-col justify-center items-center ${props.active ? 'opacity-100 border-gray-900 border-b-2' : 'opacity-60 border-transparent'} hover:opacity-100 cursor-pointer border-b-2 hover:border-gray-900 py-3`}>
                 <Image
                     src={props.icon}
                     alt="Picture of the author"

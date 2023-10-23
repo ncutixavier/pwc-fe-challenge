@@ -35,7 +35,7 @@ const ShareListing = ({ listing, image, isOpen, onClose }) => {
                                 alt="Picture of the author"
                                 width={30}
                                 height={30}
-                                quality={100}/>
+                                quality={100} />
                             <span>{item.title}</span>
                         </Link>
                     ))}
