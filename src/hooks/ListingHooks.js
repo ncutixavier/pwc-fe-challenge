@@ -1,11 +1,11 @@
 import { useQuery, useInfiniteQuery } from "react-query";
-import listingServices from "@/services/listing-services";
+import listingServices from "@/services/ListingServices";
 
 const useListingById = (id) => {
     return useQuery(["listings", id], () => listingServices.getListingById(id), {
-      enabled: id !== undefined, // Only enable the query if id is not null
+        enabled: id !== undefined,
     });
-  };
+};
 
 const useGetAllListings = () => {
     return useInfiniteQuery("listings", ({ pageParam = 1 }) => listingServices.getAllListings(pageParam), {

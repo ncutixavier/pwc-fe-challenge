@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import MainLayout from '@/layouts/MainLayout'
-import ListingCard from '@/components/listing-card/ListingCard';
+import ListingCard from '@/components/listing/ListingCard';
 import { useInView } from "react-intersection-observer";
-import {useGetAllListings} from "@/hooks/listing-hooks"
+import { useGetAllListings } from "@/hooks/ListingHooks"
 import Loading from "@/components/Loading";
 
 
@@ -23,7 +23,7 @@ const HomePage = () => {
         {isSuccess &&
           data.pages.map((page) =>
             page.map((listing, i) => (
-              <div ref={ref}  key={i}>
+              <div ref={ref} key={i}>
                 <ListingCard listing={listing} />
               </div>
             ))
