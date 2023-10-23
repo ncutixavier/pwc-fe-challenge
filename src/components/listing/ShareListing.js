@@ -31,7 +31,7 @@ const ShareListing = ({ listing, image, isOpen, onClose }) => {
                     {socials.map((item, i) => (
                         <Link href={item.link} target='_blank' key={i} className='flex gap-5 border border-gray-500 px-8 py-3 rounded-xl'>
                             <Image
-                                src={`/assets/icons/${item.title.toLowerCase()}.svg`}
+                                src={`/assets/icons/${item.title.toLowerCase()}_.svg`}
                                 alt="Picture of the author"
                                 width={30}
                                 height={30}
