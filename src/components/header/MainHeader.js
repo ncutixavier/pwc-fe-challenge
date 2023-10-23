@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Amenity from '../Amenity';
 import { useRouter } from 'next/router'
 
@@ -32,7 +32,7 @@ const Header = () => {
   const router = useRouter()
 
   useEffect(() => {
-    setStartIndex(0); // Reset the start index
+    setStartIndex(0);
   }, [containerRef]);
 
   const handlePrevClick = () => {

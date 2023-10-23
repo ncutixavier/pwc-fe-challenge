@@ -1,11 +1,11 @@
 import React from 'react'
 import ListingDetailsHeader from '@/components/header/ListingDetailsHeader'
-import { useListingById } from '@/hooks/listing-hooks'
+import { useListingById } from '@/hooks/ListingHooks'
 import { useRouter } from 'next/router'
 import Loading from '@/components/Loading'
 import { getListingImages } from '@/utils/utils'
-import ListingImages from '@/components/listing-details/ListingImages'
-import ShareListing from '@/components/listing-details/ShareListing'
+import ListingImages from '@/components/listing/ListingImages'
+import ShareListing from '@/components/listing/ShareListing'
 
 const ListingDetails = () => {
   const route = useRouter()

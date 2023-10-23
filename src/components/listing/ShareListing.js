@@ -23,7 +23,7 @@ const ShareListing = ({ listing, image, isOpen, onClose }) => {
             <Modal isOpen={isOpen} onClose={onClose}>
                 <h1 className="text-2xl font-bold mt-6">Share this place</h1>
                 <div className="flex gap-5 my-8">
-                    <img src={image} alt="Listing image" srcset="" className='w-20 h-20 rounded-xl' />
+                    <img src={image} alt="Listing image" srcSet="" className='w-20 h-20 rounded-xl' />
                     <div className="text-xl">{listing?.name}</div>
                 </div>
 
@@ -35,8 +35,7 @@ const ShareListing = ({ listing, image, isOpen, onClose }) => {
                                 alt="Picture of the author"
                                 width={30}
                                 height={30}
-                                quality={100}
-                            />
+                                quality={100}/>
                             <span>{item.title}</span>
                         </Link>
                     ))}
