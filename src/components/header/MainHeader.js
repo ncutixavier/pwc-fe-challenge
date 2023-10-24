@@ -84,7 +84,7 @@ const Header = () => {
   }, []);
 
   const getQueryNumber = () => {
-     return router.query.hasOwnProperty('isFiltering') ? Object.keys(router.query).length - 1 : 0 
+     return router.query?.hasOwnProperty('isFiltering') ? Object.keys(router.query).length - 1 : 0 
   }
 
   return (
