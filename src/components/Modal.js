@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose, children, fullScreen = false }) => {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div className="fixed inset-0 bg-black opacity-60"></div>
-            <div className={`z-50 ${fullScreen ? 'w-full h-full' : ''} p-4 mx-auto bg-white rounded-lg shadow-lg`}>
+            <div className={`z-50 ${fullScreen ? 'w-full h-full' : ''} sm:h-full sm:overflow-auto p-4 mx-auto bg-white rounded-lg shadow-lg`}>
                 <div className="relative">
                     <button
                         onClick={onClose}

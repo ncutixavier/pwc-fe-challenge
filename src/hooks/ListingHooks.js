@@ -2,7 +2,7 @@ import { useQuery, useInfiniteQuery } from "react-query";
 import listingServices from "@/services/ListingServices";
 
 const useListingById = (id) => {
-    return useQuery(["listings", id], () => listingServices.getListingById(id), {
+    return useQuery(["listing", id], () => listingServices.getListingById(id), {
         enabled: id !== undefined,
     });
 };

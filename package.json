@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
+    "dev-test": "jest --watchAll",
     "lint": "next lint"
   },
   "dependencies": {

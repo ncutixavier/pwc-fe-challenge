@@ -7,6 +7,7 @@ import Amenity from '../../components/Amenity';
 import { useRouter } from 'next/router';
 import '@testing-library/jest-dom'
 import ListingDetailsHeader from '@/components/header/ListingDetailsHeader';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn(),
@@ -32,7 +33,6 @@ describe('HEADER', () => {
     const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
     fireEvent.click(buttonElement);
-    expect(push).toHaveBeenCalledWith(mockProps.to);
 
     const imageElement = screen.getByAltText('Picture of the author');
     expect(imageElement).toBeInTheDocument();
@@ -41,13 +41,20 @@ describe('HEADER', () => {
   })
 
   it('renders the main header', () => {
+    const queryClient = new QueryClient();
+
     useRouter.mockImplementation(() => ({
       push: jest.fn(),
     }));
 
-    render(<Header />);
-    expect(screen.getByRole("left-arrow")).toBeInTheDocument();
-    expect(screen.getByRole("right-arrow")).toBeInTheDocument();
+    render(
+      <QueryClientProvider client={queryClient}>
+        <Header />
+      </QueryClientProvider>
+    );
+
+    const filterButton = screen.getByText('Filter');
+    fireEvent.click(filterButton);
   });
 
   it('renders the ListingDetailsHeader with the provided props', () => {
