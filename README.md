@@ -4,21 +4,21 @@
 
 Welcome to the PWC Frontend Challenge! 🚀
 
-## Overview 🌟
+## 🌐 Overview
 
-This project is a web application developed using Next.js, a popular React framework. It is a part of the PWC Frontend Challenge and serves as a platform to showcase your frontend development skills. You can check out the deployed version of this project here: [PWC Frontend Challenge](https://pwc-fe-challenge.vercel.app/) 🌐
+This project is a web application developed using Next.js, a popular React framework. It is a part of the PWC Frontend Challenge and serves as a platform to showcase my frontend development skills. You can check out the deployed version of this project here: [PWC Frontend Challenge](https://pwc-fe-challenge.vercel.app/) 
 
-## Features 🌟
+## 🌟 Features 
 
-🌟 Here are some of the key features of this project:
+Here are some of the key features of this project:
 
 - Modern and responsive design.
 - Next.js for efficient server-side rendering and routing.
 - Easy deployment with Vercel.
 
-## Project Strategies 🚧
+## 🚧 Project Strategies 
 
-🌟 Here are some of the key strategies of this project:
+Here are some of the key strategies followed in this project:
 
 - Set up a GitHub repository for the project.
 - Configure a boilerplate Next.js project and integrate `React Query`.
@@ -27,7 +27,7 @@ This project is a web application developed using Next.js, a popular React frame
 - Design the pages.
 - Test the project and resolve issues.
 
-## Getting Started 🚀
+## 🚀 Getting Started 
 
 To kickstart this project on your local machine, follow these steps:
 
@@ -49,13 +49,13 @@ To kickstart this project on your local machine, follow these steps:
    npm install
    ```
 
-4.  Run tests
+4. Run tests
 
    ```bash
    npm run test
    ```
 
-4.  Start the development server:
+4. Start the development server:
 
    ```bash
    npm run dev
@@ -63,13 +63,13 @@ To kickstart this project on your local machine, follow these steps:
 
 6. Open your web browser and access the development server at [http://localhost:3000](http://localhost:3000).
 
-## Deployment ☁️
+## ☁️ Deployment 
 
 The project is deployed on Vercel and is accessible at the following URL: [PWC Frontend Challenge](https://pwc-fe-challenge.vercel.app/) 🚀
 
-## Project Screenshots 📸
+## 📸 Project Screenshots 
 
-### Desktop View 🖥️
+### 🖥️ Desktop View 
 
 #### Homepage
 ![Desktop Homepage](https://github.com/ncutixavier/pwc-fe-challenge/assets/51375428/0a17d84f-12f1-465c-a228-eb2b471ee567)
@@ -78,7 +78,7 @@ The project is deployed on Vercel and is accessible at the following URL: [PWC F
 
 ![Desktop Listing Details](https://github.com/ncutixavier/pwc-fe-challenge/assets/51375428/7db66210-5f73-45da-bbd1-4b5de48f0202)
 
-### Mobile View 📱
+### 📱 Mobile View 
 
 #### Homepage
 ![Mobile Homepage](https://github.com/ncutixavier/pwc-fe-challenge/assets/51375428/12f4db2d-b8a8-466e-a8a2-76362e13fdc0)
@@ -86,10 +86,10 @@ The project is deployed on Vercel and is accessible at the following URL: [PWC F
 #### Listing details page
 ![Mobile Listing Details](https://github.com/ncutixavier/pwc-fe-challenge/assets/51375428/e1e55946-ecf2-4245-a3bd-90ba2ff71cad)
 
-## Issues 🐛
+## 🐛 Issues 
 
 If you encounter any issues with the project, please don't hesitate to [create a new issue](https://github.com/ncutixavier/pwc-fe-challenge/issues) on our GitHub repository.
 
-## License 📝
+## 📝 License 
 
 This project is licensed under the MIT License. 📜
