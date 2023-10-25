@@ -6,7 +6,7 @@ import { getListingImages, formatDateRange } from '@/utils/utils';
 const ListingCard = ({ listing }) => {
 
     return (
-        <Link href={`listings/2`} rel="noopener noreferrer" target="_blank">
+        <Link href={`listings/${listing.id}`} rel="noopener noreferrer" target="_blank">
             <div className='w-[330px] mb-8 listing-card-container cursor-pointer'>
                 <CardSlider images={getListingImages(listing?.images, listing?.id)} />
                 <div className='flex gap-5 items-start mt-3'>
